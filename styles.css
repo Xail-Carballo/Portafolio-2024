@@ -247,7 +247,7 @@ nav .switch {
 }
 
 .hero img{
-    transition: transform 2s ease; /* Duración  de la transición */
+    transition: transform 2s ease; 
 margin-bottom: 50px;
     width: 400px;
     height: auto;
@@ -1287,10 +1287,7 @@ form .textarea-field .error-txt{
 }
 
 
-.img-nav{
-    width: 60px;
-    height: auto;
-}
+
 
 
 .img-footer{
