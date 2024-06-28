@@ -329,16 +329,7 @@ margin-bottom: 50px;
     }
 }
 
-@keyframes slidebottom{
-    0%{
-        transform:  translateY(-100px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
+
 
 
 
@@ -531,7 +522,7 @@ align-items: center;
 
 
 
-      
+/*TEXTO ANIMADO TIPO ESCRITURA*/
 .animated-text{
     font-size: 20px;
     font-weight: 600;
@@ -542,59 +533,59 @@ align-items: center;
     position: relative;
 }
 
-.animated-text span::before{
-    content: " ";
-    color: var(--secondary-color);
-    animation: words 20s infinite;
+.animated-text span::before {
+    content: " "; /* Inserta un espacio antes del contenido del span */
+    color: var(--secondary-color); 
+    animation: words 20s infinite; /* Aplica la animación 'words' */
 }
 
-.animated-text span::after{
-    content: "";
-   
+.animated-text span::after {
+    content: ""; 
     position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    background-color: var(--second-bg-color);
-    border-left: 4px solid #ffffffd5;
-    right: -10px;
-    animation: cursor .8s infinite, typing 20s steps(14) infinite;
-}
+    width: calc(100% + 8px); 
+    height: 100%; 
+    background-color: var(--second-bg-color); 
+    border-left: 4px solid #ffffffd5; /* Borde izquierdo sera la linea de nuestra escitura*/
+    right: -10px; /* Posiciona a la derecha y lo separo un poco del texto*/
+    animation: cursor .8s infinite, typing 20s steps(14) infinite; /* Aplico las animaciones 'cursor' y 'typing' */
 
+/* Animación para el cursor intermitente */
 @keyframes cursor {
-    to{
-        border-left: 2px solid #ff7f5000;
+    to {
+        border-left: 2px solid #ff7f5000; /* Cambia el color del borde izquierdo para simular el parpadeo del cursor */
     }
 }
 
+/* Animación para cambiar las palabras */
 @keyframes words {
-    0%,20%{
-        content: "Student";
-        color: var(--secondary-color);
-       
+    0%, 20% {
+        content: "a student"; /* Primer conjunto de palabras */
+        color: var(--secondary-color); /* Color del texto */
     }
-    21%,40%{
-        content: "Web Designer";
-        color: var(--secondary-color);
-    }
-    41%,60%{
-        content: "new";
+    21%, 40% {
+        content: "Web Designer"; /* Segundo conjunto de palabras */
         color: var(--secondary-color);
     }
-    61%,80%{
-        content: "";
+    41%, 60% {
+        content: "a future engineer"; /* Tercer conjunto de palabras */
         color: var(--secondary-color);
     }
-    81%,100%{
-        content: "";
+    61%, 80% {
+        content: ""; /* Espacio vacío */
+        color: var(--secondary-color);
+    }
+    81%, 100% {
+        content: ""; /* Espacio vacío */
     }
 }
 
+/* Animación para el efecto de escritura */
 @keyframes typing {
-    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
-        width: 0;
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0; /* Oculta el texto */
     }
-    5%,20%,25%,40%,45%,60%,65%,80%,85%{
-        width: calc(100% + 8px);
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 8px); /* Muestra el texto con un pequeño ajuste de ancho */
     }
 }
 
