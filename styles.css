@@ -568,7 +568,7 @@ align-items: center;
     border-left: 4px solid #ffffffd5; /* Borde izquierdo sera la linea de nuestra escitura*/
     right: -10px; /* Posiciona a la derecha y lo separo un poco del texto*/
     animation: cursor .8s infinite, typing 20s steps(14) infinite; /* Aplico las animaciones 'cursor' y 'typing' */
-
+}
 /* Animación para el cursor intermitente */
 @keyframes cursor {
     to {
