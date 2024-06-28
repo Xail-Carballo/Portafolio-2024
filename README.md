@@ -1,4 +1,4 @@
-# Portafolio-2024_de-proyecto-realizado-en-Tecnolochicas
+# Portafolio-2024
 
 Este proyecto es un portafolio web responsivo, con informacion sobre mi, mis proyectos habilidades, y medios de contacto
 
